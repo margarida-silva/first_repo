@@ -1,0 +1,74 @@
+---
+title: "first_repo"
+author: "Margarida Silva"
+date: "2023-05-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Statistics notes  
+
+This is as R Markdown document containing notes from the PhD course Statistical Analysis of Behavioural Data.
+
+### Session 1. Introduction  
+
+#### Course texts 
+
+Intro2R - Web book [Intro2R](https://intro2r.com)  
+
+Asking Questions in Biology 5th Edition - Downloaded from Moodle for personal use and saved in StatisticsPhD folder on Documents.  
+
+#### Final Paper  
+
+This document will be the final paper and the deadline is 2nd June 2023. We should submitted via Moodle or via GitHub.  
+
+#### Downloading and summarizing data frames  
+
+The normal path when starting a statistical analysis is to create a RProject (I have already done that and I'm familiar with the process).  
+
+Data can be downloaded by using the following code `name <- read.table(file = "data/name.txt", header = TRUE, sep = "\t", stringsAsFactors = TRUE)`  
+
+When we use "<-" we are creating a database/ variable in R coming from a file (csv, txt...)  
+
+To see the summary of a data frame we can use `summary()` function. This function allows us to explore the data by producing tables of useful summary statistics of the variables in the database.  
+
+```{r}
+
+```
+### Session 2. Completing the R aproach
+
+In this session, we reviewed some problems with files in RMarkdown. 
+
+The knit-to-pdf documents in R do not display the paragraphs like those produced in HTML (I can not solve this problem but I will save in HTML).
+
+Problem with push the informations to GitHub. It asks for my account password and it keeps getting me this error:
+
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/margarida-silva/first_repo.git/'
+
+ChatGPT has given me this response:
+
+This error message indicates that GitHub no longer supports password authentication for remote repositories as of August 13, 2021. Instead, GitHub recommends using either personal access tokens or SSH keys to authenticate when pushing changes to remote repositories.
+
+To resolve this issue, you can try the following steps:
+
+Create a personal access token on GitHub. You can do this by going to your GitHub account settings, selecting "Developer settings", and then "Personal access tokens". Click "Generate new token" and follow the prompts to create a new token.
+
+In RStudio, go to the "Git" pane and click "Pull". Enter your GitHub username and the personal access token you just created as the password.
+
+After pulling the changes from the remote repository, make any local changes you need to make and then commit your changes.
+
+Click "Push" in the "Git" pane to push your changes to the remote repository. Enter your GitHub username as the user and the personal access token you created as the password.
+
+Alternatively, you can set up SSH authentication with GitHub instead of using a personal access token. You can find instructions for setting up SSH authentication with GitHub in the link provided in the error message.
+
+### Session 3.
+
+Summary visuals used in my field: histograms (used to see the average body size of winners and losers anemones), scatter plots (used to relate the anemone pedal disc size to the number of wins in a fight),  new edit test
+
+
+
